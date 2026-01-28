@@ -1,0 +1,63 @@
+mkdir --> create a directory
+cat > fileName --> create a file
+cat fileName --> read file content
+touch fileName --> create a file
+ls -a --> shows content including hidden
+ls -l --> content in long format
+ls -t --> content by time modified
+ls -alt --> multiple options
+cp --> copies
+mv --> moves
+rm --> removes
+rm -r --> removes with innrer files&dirs
+rm media/* --> removes all files from media folder, but folder not
+Shieft + Enter --> close file is read now
+cat fileName | uniq
+uniq fileName
+sort fileName | unic
+
+grep stands for “global regular expression print.”
+grep -i enables the command to be case insensitive
+
+$ grep -i America continents.txt
+
+grep -R searches all files in a directory and outputs filenames and lines containing matched results. -R stands grep name.txt/name
+
+grep -Rl searches all files in a directory and outputs only filenames with matched results
+
+$ grep -R Arctic /home/ccuser/workspace/geography
+/home/ccuser/workspace/geography/deserts.txt:Arctic Desert
+/home/ccuser/workspace/geography/oceans.txt:Arctic Ocean
+
+sed stands for “stream editor.” It accepts standard input and modifies it based on an expression,
+before displaying it as output data. It is similar to “find and replace.”
+
+sed stands for “stream editor.” It accepts standard input and modifies it based on an expression, before displaying In order to rewrite the actual file, we need to use -i at the beginning of the command:
+sed -i 's/snow/rain/g' forests.txt
+
+ls -la -- content includes last update
+
+grep -R player . - in current directory
+
+Redirection reroutes standard input, standard output, and standard error.
+The common redirection commands are:
+> redirects standard output of a command to a file, overwriting previous content.
+>> redirects standard output of a command to a file, appending new content to old content.
+< redirects standard input to a command.
+| redirects standard output of a command to another command.
+
+A number of other commands are powerful when combined with redirection commands:
+sort: sorts lines of text alphabetically.
+uniq: filters duplicate, adjacent lines of text.
+grep: searches for a text pattern and outputs it.
+sed : searches for a text pattern, modifies it, and outputs it.
+Ctrl + x – exit nano.
+
+ nicknames (aliases) for commands 
+
+
+nano fileName --> enter file editing
+writing text and pressing Ctrl + O to save. 
+Ctrl  + z --> force exit
+Ctrl + x – exit nano
+Ctrl + G --> help menu in nano
